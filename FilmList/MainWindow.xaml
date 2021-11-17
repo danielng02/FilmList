@@ -7,6 +7,23 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <ListView HorizontalAlignment="Left" Height="364" VerticalAlignment="Top" Width="284">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="86,379,0,0" VerticalAlignment="Top" Width="99" RenderTransformOrigin="-0.246,-0.63" Height="30"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="683,379,0,0" VerticalAlignment="Top" Width="99" RenderTransformOrigin="-0.246,-0.63" Height="30"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="520,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="402,67,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.127,0.386"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="402,121,0,0" VerticalAlignment="Top"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="402,170,0,0" VerticalAlignment="Top"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="402,218,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.709,-0.404"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="402,271,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.577,-1.333"/>
+        <Image HorizontalAlignment="Left" Height="270" Margin="571,67,0,0" VerticalAlignment="Top" Width="198"/>
+        <TextBox HorizontalAlignment="Left" Height="95" Margin="309,314,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="312"/>
+
     </Grid>
 </Window>

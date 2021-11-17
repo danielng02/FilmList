@@ -24,9 +24,9 @@ namespace FilmList
             set { genre = value; }
         }
 
-        private string releaseDate;
+        private DateTime releaseDate;
 
-        public string ReleaseDate
+        public DateTime ReleaseDate
         {
             get { return releaseDate; }
             set { releaseDate = value; }
