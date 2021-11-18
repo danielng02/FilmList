@@ -20,10 +20,25 @@ namespace FilmList
     /// </summary>
     public partial class MainWindow : Window
     {
+        List<Film> films = new List<Film>();
+
         public MainWindow()
         {
             InitializeComponent();
+            List.DataContext = films;
         }
+
+        void AddFilm(object sender, RoutedEventArgs e)
+        {
+            App createWindow = new App();
+            createWindow.Show();
+        }
+
+        void DeleteFilm(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
     }
 
 }

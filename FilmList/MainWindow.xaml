@@ -7,15 +7,15 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <ListView HorizontalAlignment="Left" Height="364" VerticalAlignment="Top" Width="284">
+        <ListView Name="List" ItemsSource="{Binding .}" HorizontalAlignment="Left" Height="364" VerticalAlignment="Top" Width="284">
             <ListView.View>
                 <GridView>
                     <GridViewColumn/>
                 </GridView>
             </ListView.View>
         </ListView>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="86,379,0,0" VerticalAlignment="Top" Width="99" RenderTransformOrigin="-0.246,-0.63" Height="30"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="683,379,0,0" VerticalAlignment="Top" Width="99" RenderTransformOrigin="-0.246,-0.63" Height="30"/>
+        <Button Name="Add" Content="Button" HorizontalAlignment="Left" Margin="86,379,0,0" VerticalAlignment="Top" Width="99" RenderTransformOrigin="-0.246,-0.63" Height="30" Click="AddFilm"/>
+        <Button Name="Delete" Content="Button" HorizontalAlignment="Left" Margin="683,379,0,0" VerticalAlignment="Top" Width="99" RenderTransformOrigin="-0.246,-0.63" Height="30" Click="DeleteFilm"/>
         <Label Content="Label" HorizontalAlignment="Left" Margin="520,10,0,0" VerticalAlignment="Top"/>
         <Label Content="Label" HorizontalAlignment="Left" Margin="402,67,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.127,0.386"/>
         <Label Content="Label" HorizontalAlignment="Left" Margin="402,121,0,0" VerticalAlignment="Top"/>
