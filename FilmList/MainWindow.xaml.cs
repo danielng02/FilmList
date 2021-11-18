@@ -26,12 +26,13 @@ namespace FilmList
         {
             InitializeComponent();
             List.DataContext = films;
+            films.Add(new Film());
         }
 
         void AddFilm(object sender, RoutedEventArgs e)
         {
-            App createWindow = new App();
-            createWindow.Show();
+            EditWindow editWindow = new EditWindow();
+            editWindow.Show();
         }
 
         void DeleteFilm(object sender, RoutedEventArgs e)
