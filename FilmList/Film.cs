@@ -32,12 +32,20 @@ namespace FilmList
             set { releaseDate = value; }
         }
 
-        private string rating;
+        private int rating;
 
-        public string Rating
+        public int Rating
         {
             get { return rating; }   
             set { rating = value; } 
+        }
+
+        private string actors;
+
+        public string Actors
+        {
+            get { return actors; }
+            set { actors = value; }
         }
     }
 }

@@ -7,6 +7,24 @@
         mc:Ignorable="d"
         Title="EditWindow" Height="450" Width="800">
     <Grid>
-        
+        <Button Content="Button" HorizontalAlignment="Left" Margin="322,352,0,0" VerticalAlignment="Top" Width="157" Height="57"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="365,10,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="43" Margin="32,77,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="268"/>
+        <TextBox HorizontalAlignment="Left" Height="43" Margin="32,156,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="268"/>
+        <DatePicker HorizontalAlignment="Left" Margin="32,252,0,0" VerticalAlignment="Top" Height="45" Width="268"/>
+        <TextBox HorizontalAlignment="Left" Height="43" Margin="471,77,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="268"/>
+        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="365,285,0,0" VerticalAlignment="Top" Height="21" Width="92"/>
+        <TextBox HorizontalAlignment="Left" Height="43" Margin="471,156,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="268"/>
+        <Slider HorizontalAlignment="Left" Margin="472,262,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="266">
+            <Slider.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Slider.RenderTransform>
+        </Slider>
+
     </Grid>
 </Window>
