@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <ListView Name="List" ItemsSource="{Binding .}" HorizontalAlignment="Left" Height="364" VerticalAlignment="Top" Width="284">
+        <ListView Name="List" ItemsSource="{Binding .}" HorizontalAlignment="Left" Height="364" VerticalAlignment="Top" Width="284" MouseDoubleClick="List_MouseDoubleClick">
             <ListView.View>
                 <GridView>
                     <GridViewColumn/>

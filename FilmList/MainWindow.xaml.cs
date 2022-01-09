@@ -41,6 +41,12 @@ namespace FilmList
             
         }
 
+        private void List_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            Film film = (Film)((ListBox)sender).SelectedItem;
+            EditWindow edit = new EditWindow(film);
+            edit.ShowDialog();
+        }
     }
 
 }

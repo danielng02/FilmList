@@ -19,10 +19,18 @@ namespace FilmList
     /// </summary>
     public partial class EditWindow : Window
     {
+        public bool existingItem;
         public EditWindow()
         {
             InitializeComponent();
             DataContext = new Film();
+            existingItem = false;
+        }
+        public EditWindow(Object f)
+        {
+            InitializeComponent();
+            DataContext = f;
+            existingItem = true;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
