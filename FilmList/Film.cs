@@ -53,5 +53,13 @@ namespace FilmList
             get { return actors; }
             set { actors = value; PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Actors")); }
         }
+
+        private string comment;
+
+        public string Comment
+        {
+            get { return comment; }
+            set { comment = value; PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Comment")); }
+        }
     }
 }

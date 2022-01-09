@@ -35,7 +35,10 @@ namespace FilmList
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Film.films.Add((Film)DataContext);
+            if (!existingItem)
+            {
+                Film.films.Add((Film)DataContext);
+            }
             this.Close();
         }
     }
