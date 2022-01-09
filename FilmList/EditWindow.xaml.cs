@@ -22,6 +22,13 @@ namespace FilmList
         public EditWindow()
         {
             InitializeComponent();
+            DataContext = new Film();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Film.films.Add((Film)DataContext);
+            this.Close();
         }
     }
 }

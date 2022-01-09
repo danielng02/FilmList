@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,13 +21,13 @@ namespace FilmList
     /// </summary>
     public partial class MainWindow : Window
     {
-        List<Film> films = new List<Film>();
+        //ObservableCollection<Film> films = new ObservableCollection<Film>();
 
         public MainWindow()
         {
             InitializeComponent();
-            List.DataContext = films;
-            films.Add(new Film());
+            List.DataContext = Film.films;
+            Film.films.Add(new Film());
         }
 
         void AddFilm(object sender, RoutedEventArgs e)
