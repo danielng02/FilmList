@@ -30,7 +30,7 @@ namespace FilmList
             set { genre = value; PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Genre")); }
         }
 
-        private DateTime releaseDate;
+        private DateTime releaseDate = DateTime.Now;
 
         public DateTime ReleaseDate
         {

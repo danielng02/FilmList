@@ -14,8 +14,10 @@
                 </GridView>
             </ListView.View>
         </ListView>
-        <Button Name="Add" Content="Button" HorizontalAlignment="Left" Margin="86,379,0,0" VerticalAlignment="Top" Width="99" RenderTransformOrigin="-0.246,-0.63" Height="30" Click="AddFilm"/>
-        <Button Name="Delete" Content="Button" HorizontalAlignment="Left" Margin="683,379,0,0" VerticalAlignment="Top" Width="99" RenderTransformOrigin="-0.246,-0.63" Height="30" Click="DeleteFilm"/>
+        
+        <Button Name="Add" Content="Add" HorizontalAlignment="Left" Margin="86,379,0,0" VerticalAlignment="Top" Width="99" RenderTransformOrigin="-0.246,-0.63" Height="30" Click="AddFilm"/>
+        <Button Name="Delete" Content="Delete" HorizontalAlignment="Left" Margin="683,379,0,0" VerticalAlignment="Top" Width="99" RenderTransformOrigin="-0.246,-0.63" Height="30" Click="DeleteFilm"/>
+        
         <Label Content="Name" HorizontalAlignment="Left" Margin="520,10,0,0" VerticalAlignment="Top"/>
         <Label Content="Genre" HorizontalAlignment="Left" Margin="402,67,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.127,0.386"/>
         <Label Content="Release Date" HorizontalAlignment="Left" Margin="402,107,0,0" VerticalAlignment="Top"/>
