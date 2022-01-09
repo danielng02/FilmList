@@ -54,6 +54,14 @@ namespace FilmList
             set { actors = value; PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Actors")); }
         }
 
+        private bool watched;
+
+        public bool Watched
+        {
+            get { return watched; }
+            set { watched = value; PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Watched")); }
+        }
+
         private string comment;
 
         public string Comment
