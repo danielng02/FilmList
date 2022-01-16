@@ -69,5 +69,6 @@ namespace FilmList
             get { return comment; }
             set { comment = value; PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Comment")); }
         }
+
     }
 }

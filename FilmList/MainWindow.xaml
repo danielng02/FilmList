@@ -8,11 +8,15 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <ListView Name="List" ItemsSource="{Binding .}" HorizontalAlignment="Left" Height="364" VerticalAlignment="Top" Width="284" MouseDoubleClick="List_MouseDoubleClick" SelectionChanged="List_SelectionChanged">
-            <ListView.View>
-                <GridView>
-                    <GridViewColumn/>
-                </GridView>
-            </ListView.View>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <WrapPanel>
+                        <TextBlock Text="{Binding Name}" FontWeight="Bold" />
+                        <TextBlock Text=", " />
+                        <TextBlock Text="{Binding ReleaseDate}" FontWeight="Bold" />
+                    </WrapPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
         </ListView>
         
         <Button Name="Add" Content="Add" HorizontalAlignment="Left" Margin="86,379,0,0" VerticalAlignment="Top" Width="99" RenderTransformOrigin="-0.246,-0.63" Height="30" Click="AddFilm"/>
