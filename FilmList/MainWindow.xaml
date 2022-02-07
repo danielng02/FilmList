@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FilmList"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="FilmList" Height="450" Width="800" Icon="star.png">
     <Grid>
         <ListView Name="List" ItemsSource="{Binding .}" HorizontalAlignment="Left" Height="364" VerticalAlignment="Top" Width="284" MouseDoubleClick="List_MouseDoubleClick" SelectionChanged="List_SelectionChanged">
             <ListView.ItemTemplate>
@@ -23,14 +23,15 @@
         <Button Name="Delete" Content="Delete" HorizontalAlignment="Left" Margin="683,379,0,0" VerticalAlignment="Top" Width="99" RenderTransformOrigin="-0.246,-0.63" Height="30" Click="DeleteFilm"/>
         <Button Name="Search" Content="Google it" HorizontalAlignment="Left" Margin="402,349,0,0" VerticalAlignment="Top" Width="141" RenderTransformOrigin="-0.246,-0.63" Height="50" Click="Search_Click"/>
 
-        <Label Content="{Binding Name}" HorizontalAlignment="Left" Margin="520,10,0,0" VerticalAlignment="Top"/>
-        <Label Content="{Binding Genre}" HorizontalAlignment="Left" Margin="402,67,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.127,0.386"/>
-        <Label Content="{Binding ReleaseDate}" HorizontalAlignment="Left" Margin="402,107,0,0" VerticalAlignment="Top"/>
-        <Label Content="{Binding Actors}" HorizontalAlignment="Left" Margin="402,153,0,0" VerticalAlignment="Top"/>
-        <Label Content="{Binding Rating}" HorizontalAlignment="Left" Margin="402,194,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.709,-0.404"/>
-        <Label Content="{Binding Comment}" HorizontalAlignment="Left" Margin="402,242,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.577,-1.333"/>
-        <Label Content="{Binding Comment}" HorizontalAlignment="Left" Height="270" Margin="571,67,0,0" VerticalAlignment="Top" Width="198"/>
-        <Image x:Name="watchedMark"  HorizontalAlignment="Left" Height="128" Margin="493,209,0,0" VerticalAlignment="Top" Width="138" Source="checkmark.png"/>
+        <Label Content="{Binding Name}" HorizontalAlignment="Center" Margin="359,14,23,0" VerticalAlignment="Top" FontSize="32" FontWeight="Bold" Width="410" FontFamily="Candara"/>
+        <Label Content="{Binding Genre}" HorizontalAlignment="Left" Margin="327,67,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.127,0.386" FontSize="26" FontWeight="DemiBold" FontFamily="Candara"/>
+        <Label Content="{Binding Release Date}" HorizontalAlignment="Left" Margin="327,109,0,0" VerticalAlignment="Top" FontSize="26" FontWeight="DemiBold" FontFamily="Candara"/>
+        <Label Content="{Binding Release Date}" HorizontalAlignment="Left" Margin="327,154,0,0" VerticalAlignment="Top" FontSize="26" FontWeight="DemiBold" FontFamily="Candara"/>
+        <Label Content="{Binding Rating}" HorizontalAlignment="Left" Margin="327,198,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.709,-0.404" FontSize="30" FontWeight="DemiBold" FontFamily="Candara"/>
+        <Label Content="{Binding Comment}" HorizontalAlignment="Left" Height="270" Margin="571,67,0,0" VerticalAlignment="Top" Width="198" FontSize="16" FontFamily="Candara"/>
+        
+        <Image x:Name="watchedMark"  HorizontalAlignment="Left" Height="113" Margin="437,231,0,0" VerticalAlignment="Top" Width="118" Source="checkmark.png"/>
+        <Image x:Name="star" HorizontalAlignment="Left" Height="39" Margin="378,201,0,0" VerticalAlignment="Top" Width="50" Source="star.png"/>
 
     </Grid>
 </Window>

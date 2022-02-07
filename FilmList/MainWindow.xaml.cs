@@ -15,6 +15,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Newtonsoft.Json;
+using System.Xml.Serialization;
+using System.IO;
 
 namespace FilmList
 {
@@ -27,8 +29,14 @@ namespace FilmList
         public MainWindow()
         {
             InitializeComponent();
+            /*XmlSerializer xs = new XmlSerializer(typeof(ObservableCollection<Film>));
+            using (StreamReader rd = new StreamReader(Properties.Resources.films))
+            {
+                Film.films = xs.Deserialize(rd) as ObservableCollection<Film>;
+            }*/
             List.DataContext = Film.films;
             watchedMark.Visibility = Visibility.Hidden;
+            star.Visibility = Visibility.Hidden;
         }
 
         void AddFilm(object sender, RoutedEventArgs e)
@@ -59,11 +67,14 @@ namespace FilmList
             if(f.Watched)
             {
                 watchedMark.Visibility = Visibility.Visible;
+                star.Visibility = Visibility.Visible;
             }
             else
             {
                 watchedMark.Visibility = Visibility.Hidden;
+                star.Visibility = Visibility.Hidden;
             }
+
         }
         private void Search_Click(object sender, RoutedEventArgs e)
         {
@@ -72,6 +83,7 @@ namespace FilmList
                 Process.Start(String.Format("http://www.google.com/search?q={0}", ((Film)List.SelectedItem).Name));
             }
         }
+
     }
 
 }
