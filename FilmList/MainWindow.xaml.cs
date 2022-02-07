@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Newtonsoft.Json;
 
 namespace FilmList
 {
@@ -21,13 +23,12 @@ namespace FilmList
     /// </summary>
     public partial class MainWindow : Window
     {
-        //ObservableCollection<Film> films = new ObservableCollection<Film>();
-
+        public static Film f;
         public MainWindow()
         {
             InitializeComponent();
             List.DataContext = Film.films;
-            Film.films.Add(new Film());
+            watchedMark.Visibility = Visibility.Hidden;
         }
 
         void AddFilm(object sender, RoutedEventArgs e)
@@ -38,7 +39,10 @@ namespace FilmList
 
         void DeleteFilm(object sender, RoutedEventArgs e)
         {
-            
+            if (List.SelectedItems.Count > 0)
+            {
+                Film.films.Remove((Film)List.SelectedItem);
+            }
         }
 
         private void List_MouseDoubleClick(object sender, MouseButtonEventArgs e)
@@ -52,6 +56,21 @@ namespace FilmList
         {
             Film f = (Film)((ListView)sender).SelectedItem;
             DataContext = f;
+            if(f.Watched)
+            {
+                watchedMark.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                watchedMark.Visibility = Visibility.Hidden;
+            }
+        }
+        private void Search_Click(object sender, RoutedEventArgs e)
+        {
+            if (List.SelectedItems.Count > 0)
+            {
+                Process.Start(String.Format("http://www.google.com/search?q={0}", ((Film)List.SelectedItem).Name));
+            }
         }
     }
 

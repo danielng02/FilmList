@@ -8,7 +8,7 @@ using System.ComponentModel;
 
 namespace FilmList
 {
-    class Film : INotifyPropertyChanged
+    public class Film : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -19,7 +19,8 @@ namespace FilmList
         public string Name
         {
             get { return name; } 
-            set { name = value; PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Name")); }
+            set 
+            { name = value; PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Name")); }
         }
 
         private string genre;

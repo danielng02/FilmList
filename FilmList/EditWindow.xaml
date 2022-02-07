@@ -8,31 +8,42 @@
         Title="EditWindow" Height="450" Width="800">
     <Grid>
         <Button Content="Okay" HorizontalAlignment="Left" Margin="322,352,0,0" VerticalAlignment="Top" Width="157" Height="57" Click="Button_Click"/>
-        
-        <Label Content="Label" HorizontalAlignment="Left" Margin="365,10,0,0" VerticalAlignment="Top"/>
+
+        <Label Content="{Binding Name}" HorizontalAlignment="Left" Margin="365,10,0,0" VerticalAlignment="Top"/>
 
         <TextBox HorizontalAlignment="Left" Height="43" Margin="32,77,0,0" TextWrapping="Wrap" Text="{Binding Name}" VerticalAlignment="Top" Width="268"/>
+        <Label Content="Name" HorizontalAlignment="Left" Margin="32,51,0,0" VerticalAlignment="Top"/>
 
         <TextBox HorizontalAlignment="Left" Height="43" Margin="32,156,0,0" TextWrapping="Wrap" Text="{Binding Genre}" VerticalAlignment="Top" Width="268"/>
-        
+        <Label Content="Genre" HorizontalAlignment="Left" Margin="32,130,0,0" VerticalAlignment="Top"/>
+
         <DatePicker HorizontalAlignment="Left" Margin="32,252,0,0" VerticalAlignment="Top" Height="45" Width="268" SelectedDate="{Binding ReleaseDate, Mode=TwoWay}"/>
+        <Label Content="Release Date" HorizontalAlignment="Left" Margin="32,221,0,0" VerticalAlignment="Top"/>
 
         <TextBox HorizontalAlignment="Left" Height="43" Margin="471,77,0,0" TextWrapping="Wrap" Text="{Binding Actors}" VerticalAlignment="Top" Width="268"/>
-        
-        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="365,285,0,0" VerticalAlignment="Top" Height="21" Width="92" IsChecked="{Binding Watched, Mode=TwoWay}"/>
-        
-        <TextBox HorizontalAlignment="Left" Height="43" Margin="471,156,0,0" TextWrapping="Wrap" Text="{Binding Comment}" VerticalAlignment="Top" Width="268"/>
-        
-        <Slider HorizontalAlignment="Left" Margin="472,262,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="266" Value="{Binding Rating}">
+        <Label Content="Actors" HorizontalAlignment="Left" Margin="471,51,0,0" VerticalAlignment="Top"/>
+
+        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="34,335,0,0" VerticalAlignment="Top" Height="21" Width="92" IsChecked="{Binding Watched, Mode=TwoWay}" RenderTransformOrigin="0.285,0.428">
+            <CheckBox.LayoutTransform>
+                <ScaleTransform ScaleX="1.7" ScaleY="1.7"/>
+            </CheckBox.LayoutTransform>
+        </CheckBox>
+        <Label Content="Watched" HorizontalAlignment="Left" Margin="32,302,0,0" VerticalAlignment="Top"/>
+
+        <TextBox HorizontalAlignment="Left" Height="141" Margin="471,156,0,0" TextWrapping="Wrap" Text="{Binding Comment}" VerticalAlignment="Top" Width="268"/>
+        <Label Content="Comment" HorizontalAlignment="Left" Margin="471,130,0,0" VerticalAlignment="Top"/>
+
+        <Slider HorizontalAlignment="Left" Margin="484,327,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="266" Value="{Binding Rating}">
             <Slider.RenderTransform>
                 <TransformGroup>
-                    <ScaleTransform ScaleX="-1"/>
+                    <ScaleTransform ScaleX="-1.2" ScaleY="-2"/>
                     <SkewTransform/>
                     <RotateTransform/>
                     <TranslateTransform/>
                 </TransformGroup>
             </Slider.RenderTransform>
         </Slider>
+        <Label Content="Rating" HorizontalAlignment="Left" Margin="471,297,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
