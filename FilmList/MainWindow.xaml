@@ -26,12 +26,12 @@
         <Label Content="{Binding Name}" HorizontalAlignment="Center" Margin="359,14,23,0" VerticalAlignment="Top" FontSize="32" FontWeight="Bold" Width="410" FontFamily="Candara"/>
         <Label Content="{Binding Genre}" HorizontalAlignment="Left" Margin="327,67,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.127,0.386" FontSize="26" FontWeight="DemiBold" FontFamily="Candara"/>
         <Label Content="{Binding Release Date}" HorizontalAlignment="Left" Margin="327,109,0,0" VerticalAlignment="Top" FontSize="26" FontWeight="DemiBold" FontFamily="Candara"/>
-        <Label Content="{Binding Release Date}" HorizontalAlignment="Left" Margin="327,154,0,0" VerticalAlignment="Top" FontSize="26" FontWeight="DemiBold" FontFamily="Candara"/>
+        <Label Content="{Binding Actors}" HorizontalAlignment="Left" Margin="327,154,0,0" VerticalAlignment="Top" FontSize="26" FontWeight="DemiBold" FontFamily="Candara"/>
         <Label Content="{Binding Rating}" HorizontalAlignment="Left" Margin="327,198,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.709,-0.404" FontSize="30" FontWeight="DemiBold" FontFamily="Candara"/>
         <Label Content="{Binding Comment}" HorizontalAlignment="Left" Height="270" Margin="571,67,0,0" VerticalAlignment="Top" Width="198" FontSize="16" FontFamily="Candara"/>
         
         <Image x:Name="watchedMark"  HorizontalAlignment="Left" Height="113" Margin="437,231,0,0" VerticalAlignment="Top" Width="118" Source="checkmark.png"/>
-        <Image x:Name="star" HorizontalAlignment="Left" Height="39" Margin="378,201,0,0" VerticalAlignment="Top" Width="50" Source="star.png"/>
+        <Image x:Name="star" HorizontalAlignment="Left" Height="39" Margin="359,198,0,0" VerticalAlignment="Top" Width="50" Source="star.png"/>
 
     </Grid>
 </Window>

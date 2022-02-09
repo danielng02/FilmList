@@ -7,33 +7,33 @@
         mc:Ignorable="d"
         Title="EditWindow" Height="450" Width="800">
     <Grid>
-        <Button Content="Okay" HorizontalAlignment="Left" Margin="322,352,0,0" VerticalAlignment="Top" Width="157" Height="57" Click="Button_Click"/>
+        <Button Content="Okay" HorizontalAlignment="Left" Margin="297,352,0,0" VerticalAlignment="Top" Width="157" Height="57" Click="Button_Click" FontSize="18"/>
 
-        <Label Content="{Binding Name}" HorizontalAlignment="Left" Margin="365,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="{Binding Name}" HorizontalAlignment="Left" Margin="365,10,0,0" VerticalAlignment="Top" FontSize="24"/>
 
         <TextBox HorizontalAlignment="Left" Height="43" Margin="32,77,0,0" TextWrapping="Wrap" Text="{Binding Name}" VerticalAlignment="Top" Width="268"/>
-        <Label Content="Name" HorizontalAlignment="Left" Margin="32,51,0,0" VerticalAlignment="Top"/>
+        <Label Content="Name" HorizontalAlignment="Left" Margin="32,51,0,0" VerticalAlignment="Top" FontSize="18"/>
 
         <TextBox HorizontalAlignment="Left" Height="43" Margin="32,156,0,0" TextWrapping="Wrap" Text="{Binding Genre}" VerticalAlignment="Top" Width="268"/>
-        <Label Content="Genre" HorizontalAlignment="Left" Margin="32,130,0,0" VerticalAlignment="Top"/>
+        <Label Content="Genre" HorizontalAlignment="Left" Margin="32,130,0,0" VerticalAlignment="Top" FontSize="18"/>
 
         <DatePicker HorizontalAlignment="Left" Margin="32,252,0,0" VerticalAlignment="Top" Height="45" Width="268" SelectedDate="{Binding ReleaseDate, Mode=TwoWay}"/>
-        <Label Content="Release Date" HorizontalAlignment="Left" Margin="32,221,0,0" VerticalAlignment="Top"/>
+        <Label Content="Release Date" HorizontalAlignment="Left" Margin="32,221,0,0" VerticalAlignment="Top" FontSize="18"/>
 
         <TextBox HorizontalAlignment="Left" Height="43" Margin="471,77,0,0" TextWrapping="Wrap" Text="{Binding Actors}" VerticalAlignment="Top" Width="268"/>
-        <Label Content="Actors" HorizontalAlignment="Left" Margin="471,51,0,0" VerticalAlignment="Top"/>
+        <Label Content="Actors" HorizontalAlignment="Left" Margin="471,51,0,0" VerticalAlignment="Top" FontSize="18"/>
 
-        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="34,335,0,0" VerticalAlignment="Top" Height="21" Width="92" IsChecked="{Binding Watched, Mode=TwoWay}" RenderTransformOrigin="0.285,0.428">
+        <CheckBox Content="Yes" HorizontalAlignment="Left" Margin="34,335,0,0" VerticalAlignment="Top" Height="21" Width="92" IsChecked="{Binding Watched, Mode=TwoWay}" RenderTransformOrigin="0.285,0.428">
             <CheckBox.LayoutTransform>
                 <ScaleTransform ScaleX="1.7" ScaleY="1.7"/>
             </CheckBox.LayoutTransform>
         </CheckBox>
-        <Label Content="Watched" HorizontalAlignment="Left" Margin="32,302,0,0" VerticalAlignment="Top"/>
+        <Label Content="Watched" HorizontalAlignment="Left" Margin="32,302,0,0" VerticalAlignment="Top" FontSize="18"/>
 
         <TextBox HorizontalAlignment="Left" Height="141" Margin="471,156,0,0" TextWrapping="Wrap" Text="{Binding Comment}" VerticalAlignment="Top" Width="268"/>
-        <Label Content="Comment" HorizontalAlignment="Left" Margin="471,130,0,0" VerticalAlignment="Top"/>
+        <Label Content="Comment" HorizontalAlignment="Left" Margin="471,130,0,0" VerticalAlignment="Top" FontSize="18"/>
 
-        <Slider HorizontalAlignment="Left" Margin="484,327,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="266" Value="{Binding Rating}">
+        <Slider HorizontalAlignment="Left" Margin="484,327,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="266" Value="{Binding Rating} " TickPlacement="TopLeft" IsDirectionReversed="True">
             <Slider.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleX="-1.2" ScaleY="-2"/>
@@ -43,7 +43,7 @@
                 </TransformGroup>
             </Slider.RenderTransform>
         </Slider>
-        <Label Content="Rating" HorizontalAlignment="Left" Margin="471,297,0,0" VerticalAlignment="Top"/>
+        <Label Content="Rating" HorizontalAlignment="Left" Margin="471,297,0,0" VerticalAlignment="Top" FontSize="18"/>
 
     </Grid>
 </Window>
