@@ -32,7 +32,7 @@
         <TextBlock Text="{Binding Comment}" HorizontalAlignment="Left" Height="270" Margin="571,67,0,0" VerticalAlignment="Top" Width="198" FontSize="16" FontFamily="Candara" TextAlignment="Justify"/>
 
         <Image x:Name="watchedMark"  HorizontalAlignment="Left" Height="113" Margin="437,231,0,0" VerticalAlignment="Top" Width="118" Source="checkmark.png"/>
-        <Image x:Name="star" HorizontalAlignment="Left" Height="39" Margin="378,201,0,0" VerticalAlignment="Top" Width="50" Source="star.png"/>
+        <Image x:Name="star" HorizontalAlignment="Left" Height="39" Margin="359,198,0,0" VerticalAlignment="Top" Width="50" Source="star.png"/>
 
     </Grid>
 </Window>

@@ -60,10 +60,17 @@ namespace FilmList
         {
             Film f = (Film)((ListView)sender).SelectedItem;
             DataContext = f;
-            if(f.Watched)
+            if (f != null)
             {
-                watchedMark.Visibility = Visibility.Visible;
                 star.Visibility = Visibility.Visible;
+                if (f.Watched)
+                {
+                    watchedMark.Visibility = Visibility.Visible;
+                }
+                else
+                {
+                    watchedMark.Visibility = Visibility.Hidden;
+                }
             }
             else
             {
@@ -71,7 +78,6 @@ namespace FilmList
                 star.Visibility = Visibility.Hidden;
                 ratingLabel.Visibility = Visibility.Hidden;
             }
-
         }
         private void Search_Click(object sender, RoutedEventArgs e)
         {
