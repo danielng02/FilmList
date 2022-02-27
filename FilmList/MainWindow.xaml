@@ -21,15 +21,16 @@
 
         <Button Name="Add" Content="Add" HorizontalAlignment="Left" Margin="86,379,0,0" VerticalAlignment="Top" Width="99" RenderTransformOrigin="-0.246,-0.63" Height="30" Click="AddFilm"/>
         <Button Name="Delete" Content="Delete" HorizontalAlignment="Left" Margin="683,379,0,0" VerticalAlignment="Top" Width="99" RenderTransformOrigin="-0.246,-0.63" Height="30" Click="DeleteFilm"/>
-        <Button Name="Search" Content="Google it" HorizontalAlignment="Left" Margin="402,349,0,0" VerticalAlignment="Top" Width="141" RenderTransformOrigin="-0.246,-0.63" Height="50" Click="Search_Click"/>
+        <Button Name="SearchGoogle" Content="Google it" HorizontalAlignment="Left" Margin="327,349,0,0" VerticalAlignment="Top" Width="141" RenderTransformOrigin="-0.246,-0.63" Height="50" Click="Search_Click"/>
+        <Button Name="SearchYoutube" Content="Youtube search" HorizontalAlignment="Left" Margin="505,349,0,0" VerticalAlignment="Top" Width="141" RenderTransformOrigin="-0.246,-0.63" Height="50" Click="SearchY_Click"/>
 
-        <Label Content="{Binding Name}" HorizontalAlignment="Center" Margin="359,14,23,0" VerticalAlignment="Top" FontSize="32" FontWeight="Bold" Width="410" FontFamily="Candara"/>
+        <TextBlock Text="{Binding Name}" HorizontalAlignment="Center" Margin="359,14,54,0" VerticalAlignment="Top" FontSize="32" FontWeight="Bold" Width="379" FontFamily="Candara" Height="37" TextAlignment="Center"/>
         <Label Content="{Binding Genre}" HorizontalAlignment="Left" Margin="327,67,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.127,0.386" FontSize="26" FontWeight="DemiBold" FontFamily="Candara"/>
-        <Label Content="{Binding Release Date}" HorizontalAlignment="Left" Margin="327,109,0,0" VerticalAlignment="Top" FontSize="26" FontWeight="DemiBold" FontFamily="Candara"/>
-        <Label Content="{Binding Release Date}" HorizontalAlignment="Left" Margin="327,154,0,0" VerticalAlignment="Top" FontSize="26" FontWeight="DemiBold" FontFamily="Candara"/>
-        <Label Content="{Binding Rating}" HorizontalAlignment="Left" Margin="327,198,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.709,-0.404" FontSize="30" FontWeight="DemiBold" FontFamily="Candara"/>
-        <Label Content="{Binding Comment}" HorizontalAlignment="Left" Height="270" Margin="571,67,0,0" VerticalAlignment="Top" Width="198" FontSize="16" FontFamily="Candara"/>
-        
+        <TextBlock Text="{Binding ReleaseDate, StringFormat=dd/MM/yyyy}" HorizontalAlignment="Left" Margin="327,105,0,0" VerticalAlignment="Top" FontSize="26" FontWeight="DemiBold" FontFamily="Candara"/>
+        <Label Content="{Binding Actors}" HorizontalAlignment="Left" Margin="327,154,0,0" VerticalAlignment="Top" FontSize="26" FontWeight="DemiBold" FontFamily="Candara"/>
+        <Label x:Name="ratingLabel" Content="{Binding Rating}" HorizontalAlignment="Left" Margin="327,198,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.709,-0.404" FontSize="30" FontWeight="DemiBold" FontFamily="Candara"/>
+        <TextBlock Text="{Binding Comment}" HorizontalAlignment="Left" Height="270" Margin="571,67,0,0" VerticalAlignment="Top" Width="198" FontSize="16" FontFamily="Candara" TextAlignment="Justify"/>
+
         <Image x:Name="watchedMark"  HorizontalAlignment="Left" Height="113" Margin="437,231,0,0" VerticalAlignment="Top" Width="118" Source="checkmark.png"/>
         <Image x:Name="star" HorizontalAlignment="Left" Height="39" Margin="378,201,0,0" VerticalAlignment="Top" Width="50" Source="star.png"/>
 

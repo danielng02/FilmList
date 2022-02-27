@@ -9,7 +9,7 @@
     <Grid>
         <Button Content="Okay" HorizontalAlignment="Left" Margin="322,352,0,0" VerticalAlignment="Top" Width="157" Height="57" Click="Button_Click"/>
 
-        <Label Content="{Binding Name}" HorizontalAlignment="Left" Margin="365,10,0,0" VerticalAlignment="Top"/>
+        <TextBlock Text="{Binding Name}" HorizontalAlignment="Left" Margin="210,14,0,0" VerticalAlignment="Top" FontSize="32" FontWeight="Bold" Width="379" FontFamily="Candara" Height="37" TextAlignment="Center"/>
 
         <TextBox HorizontalAlignment="Left" Height="43" Margin="32,77,0,0" TextWrapping="Wrap" Text="{Binding Name}" VerticalAlignment="Top" Width="268"/>
         <Label Content="Name" HorizontalAlignment="Left" Margin="32,51,0,0" VerticalAlignment="Top"/>
@@ -33,7 +33,7 @@
         <TextBox HorizontalAlignment="Left" Height="141" Margin="471,156,0,0" TextWrapping="Wrap" Text="{Binding Comment}" VerticalAlignment="Top" Width="268"/>
         <Label Content="Comment" HorizontalAlignment="Left" Margin="471,130,0,0" VerticalAlignment="Top"/>
 
-        <Slider HorizontalAlignment="Left" Margin="484,327,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="266" Value="{Binding Rating}">
+        <Slider HorizontalAlignment="Left" Margin="484,327,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="266" Value="{Binding Rating}" IsDirectionReversed="True">
             <Slider.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleX="-1.2" ScaleY="-2"/>
